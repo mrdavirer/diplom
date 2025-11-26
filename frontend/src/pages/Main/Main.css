@@ -1,0 +1,556 @@
+.main-page {
+  padding-top: 0;
+}
+
+.banner {
+  background: linear-gradient(135deg, var(--secondary-color), #2E7D32);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.banner-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.popular-section, .jobs-section, .contacts-section {
+  padding: 80px 20px;
+}
+
+.popular-section {
+  background-color: var(--primary-bg);
+}
+
+.jobs-section {
+  background-color: #f8f9fa;
+}
+
+.contacts-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.popular-section h2,
+.jobs-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: var(--text-dark);
+}
+
+.products-grid,
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.product-item, .job-item {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover, .job-item:hover {
+  transform: translateY(-2px);
+}
+
+.product-item img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.product-item h3,
+.job-item h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+
+.price, .salary {
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 16px;
+}
+
+.company {
+  color: var(--text-light);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.view-all-btn {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* Стили для секции контактов */
+.contacts-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contacts-header h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.contacts-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contacts-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contacts-card {
+  height: 1300px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  color: var(--text-dark);
+}
+
+.contact-main {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(76, 175, 80, 0.2);
+}
+
+.contact-main h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.contact-tagline {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(76, 175, 80, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(76, 175, 80, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  background: rgba(76, 175, 80, 0.1);
+  transform: translateX(5px);
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--secondary-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-value {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  flex: 1;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 20px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.map-card {
+  height: 1300px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.map-preview {
+  height: 300px;
+  position: relative;
+  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+  overflow: hidden;
+}
+
+.map-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+}
+
+.map-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.grid-line {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+
+.map-roads {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.road {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.road.horizontal {
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 8px;
+  transform: translateY(-50%);
+}
+
+.road.vertical {
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  transform: translateX(-50%);
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.map-marker {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.marker-dot {
+  width: 20px;
+  height: 20px;
+  background: #ff4444;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(255, 68, 68, 0.4);
+  position: relative;
+  z-index: 2;
+}
+
+.marker-pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 68, 68, 0.3);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.map-address {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 280px;
+}
+
+.map-address strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.map-address span {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.map-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 720px;
+}
+
+.map-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  border: none;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.map-action-btn.primary {
+  color: var(--secondary-color);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.map-action-btn.secondary {
+  color: var(--text-dark);
+}
+
+.map-action-btn:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+/* Состояния загрузки */
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-light);
+  font-size: 18px;
+}
+
+.map-loading {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Анимации */
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .products-grid,
+  .jobs-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .products-grid,
+  .jobs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .contacts-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .contacts-header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+  
+  .banner-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popular-section, .jobs-section, .contacts-section {
+    padding: 40px 20px;
+  }
+  
+  .products-grid,
+  .jobs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contacts-card {
+    padding: 30px 25px;
+  }
+  
+  .contact-actions {
+    flex-direction: column;
+  }
+  
+  .contact-btn {
+    min-width: auto;
+  }
+  
+  .map-actions {
+    grid-template-columns: 1fr;
+  }
+  
+  .map-action-btn.primary {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid,
+  .jobs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contacts-card {
+    padding: 25px 20px;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .contact-icon {
+    align-self: center;
+  }
+  
+  .contacts-header h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-main h3 {
+    font-size: 1.5rem;
+  }
+}
